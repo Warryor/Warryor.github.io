@@ -6,9 +6,6 @@
     <link rel="stylesheet" href="miestilos.css">
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <script src="https://sii.itq.edu.mx/sistema/libs/bootstrap/js/jquery.min.js"></script>
-    <script src="https://sii.itq.edu.mx/sistema/libs/bootstrap/js/bootstrap.min.js"></script>
-    <script type="text/javascript" src="https://sii.itq.edu.mx/sistema/includes/funciones/js/funciones.js"></script>
 </head>
 <body background="img/3.jpg">
     <nav id="menuprincipal">
