@@ -16,7 +16,7 @@
                 <a href="index.html"><h2>Inicio</h2></a>
             </li>
             <li>
-                <a href="reticula.md"><h2>Reticula</h2></a>
+                <a href="reticula.html"><h2>Reticula</h2></a>
             </li>
             <li>
                 <a href="JavaScript.html"><h2>JavaScript</h2></a>
