@@ -1,0 +1,64 @@
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta http-equiv="imagetoolbar" content="no" />
+<meta name="author" content="Lo H@cemos Web" />
+<meta name="Keywords" content="" />
+<meta name="Description" content="" />
+<meta name="geography" content="" />
+<meta name="language" content="" />
+<title>Calculos desde Formulario Javascript</title>
+<script>
+  var _paq = _paq || [];
+  _paq.push(["trackPageView"]);
+  _paq.push(["enableLinkTracking"]);
+
+  (function() {
+    // var u=(("https:" == document.location.protocol) ? "https" : "http") + "://estadisticas.totalh.net/";
+    var u=(("https:" == document.location.protocol) ? "https" : "http") + "://piwik.lohacemosweb.net/";
+    _paq.push(["setTrackerUrl", u+"piwik.php"]);
+    _paq.push(["setSiteId", "10"]);
+    var d=document, g=d.createElement("script"), s=d.getElementsByTagName("script")[0]; g.type="text/javascript";
+    g.defer=true; g.async=true; g.src=u+"piwik.js"; s.parentNode.insertBefore(g,s);
+  })();
+</script>
+
+<script language="javascript" type="text/javascript">
+function calcula(){
+    var operando1 = document.forms[0].operando1.value
+    var operando2 = document.forms[0].operando2.value
+    var operador = document.forms[0].operador.value
+    var result = eval(operando1 + operador + operando2)
+    document.forms[0].resultado.value = result
+}
+</script>
+</head>
+<body>
+<form>
+Operador 1: <input type="Text" name="operando1" /><br />
+Operador: <input type="Text" name="operador" /><br />
+Operando 2 <input type="Text" name="operando2" /><br />
+Resultado: <input type="Text" name="resultado" value="0" size="12" onclick="calcula()">
+</form>
+<br /><br />
+<u><b>Código:</b></u><br />
+<code><span style="color: #000000">
+&lt;script&nbsp;language="javascript"&nbsp;type="text/javascript"&gt;
+<br />function&nbsp;calcula(){
+<br />&nbsp;&nbsp;&nbsp;&nbsp;var&nbsp;operando1&nbsp;=&nbsp;document.forms[0].operando1.value
+<br />&nbsp;&nbsp;&nbsp;&nbsp;var&nbsp;operando2&nbsp;=&nbsp;document.forms[0].operando2.value
+<br />&nbsp;&nbsp;&nbsp;&nbsp;var&nbsp;operador&nbsp;=&nbsp;document.forms[0].operador.value
+<br />&nbsp;&nbsp;&nbsp;&nbsp;var&nbsp;result&nbsp;=&nbsp;eval(operando1&nbsp;+&nbsp;operador&nbsp;+&nbsp;operando2)
+<br />&nbsp;&nbsp;&nbsp;&nbsp;document.forms[0].resultado.value&nbsp;=&nbsp;result
+<br />}
+<br />&lt;/script&gt;
+<br />&lt;form&gt;
+<br />Operador&nbsp;1:&nbsp;&lt;input&nbsp;type="Text"&nbsp;name="operando1"&nbsp;/&gt;&lt;br&nbsp;/&gt;
+<br />Operador:&nbsp;&lt;input&nbsp;type="Text"&nbsp;name="operador"&nbsp;/&gt;&lt;br&nbsp;/&gt;
+<br />Operando&nbsp;2&nbsp;&lt;input&nbsp;type="Text"&nbsp;name="operando2"&nbsp;/&gt;&lt;br&nbsp;/&gt;
+<br />Resultado:&nbsp;&lt;input&nbsp;type="Text"&nbsp;name="resultado"&nbsp;value="0"&nbsp;size="12"&nbsp;onclick="calcula()"&gt;
+<br />&lt;/form&gt;</span>
+</code></body>
+</html>
