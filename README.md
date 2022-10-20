@@ -1,5 +1,4 @@
 #PROGRAMACION WEB
-<!DOCTYPE html>
 <head>
     <link rel="shortcut icon" href="img/icono.png">
     <link rel="stylesheet" href="miestilos.css">
