@@ -33,5 +33,5 @@
         <div class="row">
 
 <h2>Triángulo de Pascal o triángulo de Tartaglia</h2>  
-   <p id="resultado"></p>  
-   <script src="index.js"></script>  
+            <p id="resultado"></p>
+            <script src="js/index.js"></script>  
