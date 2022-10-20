@@ -32,9 +32,9 @@ function calcula(){
     var depre = (1/anos)
     var ano1 = costo*(depre)
     var ano2 = (costo-ano1)*(depre)
-    var ano3 = (costo-ano2)*(depre)
-    var ano4 = (costo-ano3)*(depre)
-    var ano5 = (costo-ano4)*(depre)
+    var ano3 = (costo-ano1-ano2)*(depre)
+    var ano4 = (costo-ano1-ano2-ano3)*(depre)
+    var ano5 = (costo-ano1-ano2-ano3-ano4)*(depre)
     document.forms[0].resulano1.value = ano1
     document.forms[0].resulano2.value = ano2
     document.forms[0].resulano3.value = ano3
