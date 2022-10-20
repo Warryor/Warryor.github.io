@@ -27,38 +27,30 @@
 
 <script language="javascript" type="text/javascript">
 function calcula(){
-    var operando1 = document.forms[0].operando1.value
-    var operando2 = document.forms[0].operando2.value
-    var operador = document.forms[0].operador.value
-    var result = eval(operando1 + operador + operando2)
-    document.forms[0].resultado.value = result
+    var costo = document.forms[0].costo.value
+    var anos = document.forms[0].anos.value
+    var depre = (1/anos)
+    var ano1 = costo*(depre)
+    var ano2 = (costo-ano1)*(depre)
+    var ano3 = (costo-ano2)*(depre)
+    var ano4 = (costo-ano3)*(depre)
+    var ano5 = (costo-ano4)*(depre)
+    document.forms[0].resulano1.value = result1
+    document.forms[0].resulano2.value = result2
+    document.forms[0].resulano3.value = result3
+    document.forms[0].resulano4.value = result4
+    document.forms[0].resulano5.value = result5
 }
 </script>
 </head>
 <body>
 <form>
-Operador 1: <input type="Text" name="operando1" /><br />
-Operador: <input type="Text" name="operador" /><br />
-Operando 2 <input type="Text" name="operando2" /><br />
-Resultado: <input type="Text" name="resultado" value="0" size="12" onclick="calcula()">
-</form>
-<br /><br />
-<u><b>Código:</b></u><br />
-<code><span style="color: #000000">
-&lt;script&nbsp;language="javascript"&nbsp;type="text/javascript"&gt;
-<br />function&nbsp;calcula(){
-<br />&nbsp;&nbsp;&nbsp;&nbsp;var&nbsp;operando1&nbsp;=&nbsp;document.forms[0].operando1.value
-<br />&nbsp;&nbsp;&nbsp;&nbsp;var&nbsp;operando2&nbsp;=&nbsp;document.forms[0].operando2.value
-<br />&nbsp;&nbsp;&nbsp;&nbsp;var&nbsp;operador&nbsp;=&nbsp;document.forms[0].operador.value
-<br />&nbsp;&nbsp;&nbsp;&nbsp;var&nbsp;result&nbsp;=&nbsp;eval(operando1&nbsp;+&nbsp;operador&nbsp;+&nbsp;operando2)
-<br />&nbsp;&nbsp;&nbsp;&nbsp;document.forms[0].resultado.value&nbsp;=&nbsp;result
-<br />}
-<br />&lt;/script&gt;
-<br />&lt;form&gt;
-<br />Operador&nbsp;1:&nbsp;&lt;input&nbsp;type="Text"&nbsp;name="operando1"&nbsp;/&gt;&lt;br&nbsp;/&gt;
-<br />Operador:&nbsp;&lt;input&nbsp;type="Text"&nbsp;name="operador"&nbsp;/&gt;&lt;br&nbsp;/&gt;
-<br />Operando&nbsp;2&nbsp;&lt;input&nbsp;type="Text"&nbsp;name="operando2"&nbsp;/&gt;&lt;br&nbsp;/&gt;
-<br />Resultado:&nbsp;&lt;input&nbsp;type="Text"&nbsp;name="resultado"&nbsp;value="0"&nbsp;size="12"&nbsp;onclick="calcula()"&gt;
-<br />&lt;/form&gt;</span>
-</code></body>
+Monto: <input type="Text" name="costo" /><br />
+Años: <input type="Text" name="anos" /><br />
+Año 1: <input type="Text" name="resulano1" value="0" size="12" onclick="calcula()">
+Año 2: <input type="Text" name="resulano2" value="0" size="12" onclick="calcula()">
+Año 3: <input type="Text" name="resulano3" value="0" size="12" onclick="calcula()">
+Año 4: <input type="Text" name="resulano4" value="0" size="12" onclick="calcula()">
+Año 5: <input type="Text" name="resulano5" value="0" size="12" onclick="calcula()">
+</form></body>
 </html>
