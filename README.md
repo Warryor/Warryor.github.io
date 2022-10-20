@@ -1,6 +1,6 @@
+#PROGRAMACION WEB
 <!DOCTYPE html>
 <head>
-    <title>ProgramaciónWeb2022B</title>
     <link rel="shortcut icon" href="img/icono.png">
     <link rel="stylesheet" href="miestilos.css">
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
