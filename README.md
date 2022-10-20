@@ -13,16 +13,16 @@
                 <img src="img\Kirby-02.gif" width="50" alt="request image">
             </li>
             <li>
-                <a href="index.php"><h2>Inicio</h2></a>
+                <a href="index.html"><h2>Inicio</h2></a>
             </li>
             <li>
-                <a href="reticula.php"><h2>Reticula</h2></a>
+                <a href="reticula.html"><h2>Reticula</h2></a>
             </li>
             <li>
-                <a href="JavaScript.php"><h2>JavaScript</h2></a>
+                <a href="JavaScript.html"><h2>JavaScript</h2></a>
             </li>
             <li>
-                <a href="pascal.php"><h2>Pascal</h2></a>
+                <a href="pascal.html"><h2>Pascal</h2></a>
             </li>
         </ul>
     </div>
