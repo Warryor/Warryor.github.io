@@ -10,47 +10,20 @@
 <meta name="geography" content="" />
 <meta name="language" content="" />
 <title>Calculos desde Formulario Javascript</title>
-<script>
-  var _paq = _paq || [];
-  _paq.push(["trackPageView"]);
-  _paq.push(["enableLinkTracking"]);
-
-  (function() {
-    // var u=(("https:" == document.location.protocol) ? "https" : "http") + "://estadisticas.totalh.net/";
-    var u=(("https:" == document.location.protocol) ? "https" : "http") + "://piwik.lohacemosweb.net/";
-    _paq.push(["setTrackerUrl", u+"piwik.php"]);
-    _paq.push(["setSiteId", "10"]);
-    var d=document, g=d.createElement("script"), s=d.getElementsByTagName("script")[0]; g.type="text/javascript";
-    g.defer=true; g.async=true; g.src=u+"piwik.js"; s.parentNode.insertBefore(g,s);
-  })();
-</script>
-
-<script language="javascript" type="text/javascript">
-function calcula(){
-    var costo = document.forms[0].costo.value
-    var anos = document.forms[0].anos.value
-    var depre = (1/anos)
-    var ano1 = costo*(depre)
-    var ano2 = (costo-ano1)*(depre)
-    var ano3 = (costo-ano1-ano2)*(depre)
-    var ano4 = (costo-ano1-ano2-ano3)*(depre)
-    var ano5 = (costo-ano1-ano2-ano3-ano4)*(depre)
-    document.forms[0].resulano1.value = ano1
-    document.forms[0].resulano2.value = ano2
-    document.forms[0].resulano3.value = ano3
-    document.forms[0].resulano4.value = ano4
-    document.forms[0].resulano5.value = ano5
-}
-</script>
 </head>
 <body>
 <form>
 Monto: <input type="Text" name="costo" /><br />
 Años: <input type="Text" name="anos" /><br />
-Año 1: <input type="Text" name="resulano1" value="0" size="12" onclick="calcula()"><br />
-Año 2: <input type="Text" name="resulano2" value="0" size="12" onclick="calcula()"><br />
-Año 3: <input type="Text" name="resulano3" value="0" size="12" onclick="calcula()"><br />
-Año 4: <input type="Text" name="resulano4" value="0" size="12" onclick="calcula()"><br />
-Año 5: <input type="Text" name="resulano5" value="0" size="12" onclick="calcula()"><br />
+  <script language="javascript" type="text/javascript">
+ var precio;
+ var años;
+ var i=1;
+ var depre=0;
+ while ( i<=años) {
+   depre=(i/años)*precio;
+   document.write("Año ", i,": ",depre,"<br>");
+ }
+</script>
 </form></body>
 </html>
