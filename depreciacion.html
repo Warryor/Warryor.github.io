@@ -17,8 +17,8 @@ Monto: <input type="Text" name="costo" /><br />
 Años: <input type="Text" name="anos" /><br />
   <script language="javascript" type="text/javascript">
  function depreciacion(){
- var precio;
- var años;
+ var costo = document.forms[0].costo.value
+ var anos = document.forms[0].anos.value
  var i=1;
  var depre=0;
  while ( i<=años) {
