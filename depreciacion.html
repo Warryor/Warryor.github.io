@@ -18,7 +18,7 @@
  document.write("hola");
  for (var i = 1; i <=anos; i++) {
    depre=((i)/anos)*costo;
-   document.write("Año ", i,": ",depre,"<br>");
+   document.forms[0].document.write("Año ", i,": ",depre,"<br>");
  }
 </script>
 </head>
@@ -26,6 +26,6 @@
 <form>
 Monto: <input type="Text" name="costo" /><br />
 Años: <input type="Text" name="anos" /><br />
-  <input value="Procesar" type="button" onclick="deprec();" />
+Resultado: <input type="Text" name="resultado" value="0" size="12" onclick="deprec()">
 </form></body>
 </html>
