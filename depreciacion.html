@@ -10,21 +10,22 @@
 <meta name="geography" content="" />
 <meta name="language" content="" />
 <title>Calculos desde Formulario Javascript</title>
-</head>
-<body>
-<form>
-Monto: <input type="Text" name="costo" /><br />
-Años: <input type="Text" name="anos" /><br />
  <script language="javascript" type="text/javascript">
  function depreciacion(){
  var costo = document.forms[0].costo.value;
  var anos = document.forms[0].anos.value;
  var depre = 0;
- for (var i = 0; i < anos; i++) {
-   depre=((i+1)/anos)*costo;
+ document.write("hola");
+ for (var i = 1; i <=anos; i++) {
+   depre=((i)/anos)*costo;
    document.write("Año ", i,": ",depre,"<br>");
  }
 </script>
+</head>
+<body>
+<form>
+Monto: <input type="Text" name="costo" /><br />
+Años: <input type="Text" name="anos" /><br />
   <input value="Procesar" type="button" onclick="depreciacion();" />
 </form></body>
 </html>
