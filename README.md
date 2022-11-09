@@ -24,6 +24,12 @@
             <li>
                 <a href="pascal.html"><h2>Pascal</h2></a>
             </li>
+            <li>
+                <a href="depreciacion.html"><h2>Depreciación</h2></a>
+            </li>
+            <li>
+                <a href="num-letra.html"><h2>Numeros</h2></a>
+            </li>
         </ul>
     </div>
     </nav>
