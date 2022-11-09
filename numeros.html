@@ -29,9 +29,12 @@
     </div>
     </nav>
     <br />
-    <div class="container">
-        <div class="row">
-            <div align="center">
-                <p id="resultado"></p>
-                <script src="js/num-letra.js"></script>
-            </div>
+     <div class="root">
+        <h1>Convertidor de números a letras</h1>
+        <form class="form" action="#" onsubmit="event.preventDefault();">
+            <label for="field-number">Ingrese un número:</label>
+            <input type="text" id='field-number' autocomplete="off">
+            <p id="message"></p>
+        </form>
+    </div>
+    <script src="js/num-letra.js"></script>
