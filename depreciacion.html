@@ -1,31 +1,39 @@
 
-<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
-<html xmlns="http://www.w3.org/1999/xhtml">
+<!DOCTYPE html>
+<html lang="en">
 <head>
-<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-<meta http-equiv="imagetoolbar" content="no" />
-<meta name="author" content="Lo H@cemos Web" />
-<meta name="Keywords" content="" />
-<meta name="Description" content="" />
-<meta name="geography" content="" />
-<meta name="language" content="" />
-<title>Calculos desde Formulario Javascript</title>
- <script language="javascript" type="text/javascript">
- function deprec(){
- var costo = document.forms[0].costo.value;
- var anos = document.forms[0].anos.value;
- var depre = 0;
- document.write("hola");
- for (var i = 1; i <=anos; i++) {
-   depre=((i)/anos)*costo;
-   document.forms[0].write("Año ", i,": ",depre,"<br>");
- }
-</script>
+    <link rel="shortcut icon" href="img/icono.png">
+    <link rel="stylesheet" href="miestilos.css">
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
 </head>
-<body>
-<form>
-Monto: <input type="Text" name="costo" /><br />
-Años: <input type="Text" name="anos" /><br />
-Resultado: <input type="Text" name="resultado" value="0" size="12" onclick="deprec()">
-</form></body>
-</html>
+<body background="img/3.jpg">
+    <nav id="menuprincipal">
+    <div>
+        <ul>
+            <li>
+                <img src="img\Kirby-02.gif" width="50" alt="request image">
+            </li>
+            <li>
+                <a href="index.html"><h2>Inicio</h2></a>
+            </li>
+            <li>
+                <a href="reticula.html"><h2>Reticula</h2></a>
+            </li>
+            <li>
+                <a href="JavaScript.html"><h2>JavaScript</h2></a>
+            </li>
+            <li>
+                <a href="pascal.html"><h2>Pascal</h2></a>
+            </li>
+        </ul>
+    </div>
+    </nav>
+    <br />
+    <div class="container">
+        <div class="row">
+            <div align="center">
+            <h2>Triángulo de Pascal o triángulo de Tartaglia</h2>  
+                <p id="resultado"></p>
+                <script src="js/depre.js"></script>
+            </div>
