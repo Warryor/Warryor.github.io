@@ -7,5 +7,7 @@ $password = 'eFKsOkWxz17sDe';
 $conexion = new mysqli($hostname,$username,$password,$database);
 if($conexion->connect_errno){
 	echo "El sitio web está experimentando problemas";
+}else{
+    echo"Conexion con exito";
 }
 ?>
